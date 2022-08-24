@@ -17,6 +17,7 @@ body{
 
 .titulo{
     font-style: italic;
+   
 }
 
 .butaca{
@@ -109,4 +110,12 @@ body{
 
 p.texto span{
     color: aqua;
+}
+
+button {
+    padding: 6px;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: gold;
 }

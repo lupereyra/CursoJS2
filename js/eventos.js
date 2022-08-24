@@ -1,4 +1,4 @@
-//cargo las peliculas disponibles para seleccionar
+//cargo las peliculas disponibles para seleccionar 
 const cargarPelis = (select, array) => { 
     if (array.length > 0) {
         array.forEach(elemento => {
@@ -34,3 +34,17 @@ contenedor.addEventListener('click', (e) => {
     }
     actualizaSeleccion();
 })
+
+//local storage  (cuando el usuario hace click en continuar se guarda la info)
+const guardarData = ()=> { 
+    const info = {
+        fecha: new Date().toLocaleString(),
+        pelicula: pelicula[pelicula.selectedIndex].text,
+        precio: total.innerText
+    }
+    localStorage.setItem("UltimaSeleccion", JSON.stringify(info))
+
+}
+
+
+btnContinuar.addEventListener("click", guardarData);

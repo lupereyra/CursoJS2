@@ -6,7 +6,6 @@ const total=  document.getElementById('total');
 const peliculaSeleccionada= document.getElementById('pelicula');
 
 let precioTicket = parseInt(peliculaSeleccionada.value);
-console.log(typeof precioTicket)
 
 //array de objetos con las peliculas disponibles en cartelera
 const datosPeliculas = [{pelicula:'Dragon Ball Super - 2D CAST ($700)', value: 700},

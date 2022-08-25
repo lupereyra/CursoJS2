@@ -115,7 +115,11 @@ p.texto span{
 button {
     padding: 6px;
     margin-top: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    background-color: gold;
 }
 button:hover {
-    background-color: gold;
+    background-color: rgb(228, 219, 172);
 }

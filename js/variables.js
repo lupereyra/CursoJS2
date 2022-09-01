@@ -35,3 +35,14 @@ function generadorDatosPeliculas (){
     
 generadorDatosPeliculas();    
     
+
+//probando DESESTRUCTURACION 
+datosPeliculas.forEach(element => {
+
+    const {pelicula,value} = element;
+    const content = element.innerHTML;
+    
+    
+})
+    
+    

@@ -1,12 +1,12 @@
 //cargo las peliculas disponibles para seleccionar   
 //uso del operador logico AND  
- const cargarPelis = (select, array) => { 
-     (array.length > 0) && array.forEach(elemento => {
-            select.innerHTML += `<option value="${elemento.value}">${elemento.pelicula}</option>`
-        });
-    }
+//const cargarPelis = (select, array) => { 
+//     (array.length > 0) && array.forEach(elemento => {
+//            select.innerHTML += `<option value="${elemento.value}">${elemento.pelicula}</option>`
+//        });
+//    }
 
- cargarPelis(pelicula, datosPeliculas);    
+// cargarPelis(pelicula, datosPeliculas);    
 
 //actualiza el total de butacas y el importe a pagar
 let butacasSeleccionadasContador;
@@ -74,7 +74,6 @@ const avisoAlerta = () => {
         showConfirmButton: false,
         timer: 3000,
         toast: true,
-        position: top
     })
 }
 
@@ -88,4 +87,5 @@ if(datosCompletos()){
 }
 }
 btnContinuar.addEventListener("click", continuar)
+
 
